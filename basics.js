@@ -60,4 +60,17 @@ var mayorIgual = 100 >= 10;
 var menorIgual = 10 <= 100;
 var igual = 10 == 10;
 var igualTotalmente = 10 === 10; // Ojo! Usamos también === Compara valor y tipo
-var noIgual = 100 != 10;  
+var noIgual = 100 != 10;
+var noIgualTotalmente = 100 !== 10;
+
+//Operadores lógicos
+ //AND (&&)
+ console.log(true && true); // true
+ console.log(true && false); // false
+ console.log(false && false); // false
+ console.log(false && true); // false  
+ //OR (||)
+ console.log(true || true); // true
+ console.log(true || false); // true
+ console.log(false || false); // false
+ console.log(false || true); // true
