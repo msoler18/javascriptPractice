@@ -106,4 +106,33 @@ var noIgualTotalmente = 100 !== 10;
 
   //Operador ternario
   //condicional ? expresión1 : expresión2
-    
+
+
+//Bucles
+
+  //While
+  var condicion = true
+  while (condicion) {
+    console.log("hola");
+    condicion = false;
+  };
+
+  //For
+  for (var i = 0; i < 10; i++) {
+    console.log(i);
+  } 
+
+  //Errores comunes
+      //Bucle infinito
+      //Bucle que no se ejecutara 
+
+  //Usos avanzados
+    //Decrecimiento
+    for (var i = 10; i > 0; i--) {
+      console.log(i);
+    } 
+
+    //Anidación
+    //Maximo dos o tres niveles de anidacion.
+
+    //No refactorizar   
