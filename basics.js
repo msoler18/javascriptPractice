@@ -74,3 +74,36 @@ var noIgualTotalmente = 100 !== 10;
  console.log(true || false); // true
  console.log(false || false); // false
  console.log(false || true); // true
+
+//Condicionales
+ //IF
+ if(1 === 1){
+   console.log("1 es igual a 1 y por eso me ejecuto")
+  }
+
+  if(1 === "1"){
+      console.log("No son del mismo tipo y por eso... este texto jamás será mostra 7 do en la consola.") 
+  }
+  
+  //If else
+  console.log("pase lo que pase... esto se ejecutará")
+  if (true) {
+      console.log("true, por eso me ejecuto");
+  } else {
+      console.log("false, por eso me ejecuto");
+  }
+  console.log("pase lo que pase... esto se ejecutará también")
+  
+  //Else if
+  var condicion = 2;
+  if (condicion == 1) {
+    console.log("1, por eso me ejecuto");
+  } else if (condicion == 2){
+    console.log("2, por eso me ejecuto");
+  } else {
+    console.log("no es 1 o 2, por eso me ejecuto");
+  }
+
+  //Operador ternario
+  //condicional ? expresión1 : expresión2
+    
