@@ -106,3 +106,17 @@
        saluda();
 
        //Ámbito (Scope)
+
+       //Por defecto en js existen dos tipos de ambitos,(Local, Global)
+
+       var ambitoGlobal = "Hola soy una variable del scope Global";
+
+       function person(){
+        var name = "Hola soy una variable del scope local";
+       }
+
+       /*
+        Una mala practica a la hora de planificar nombres para variables
+        es crear o declarar variables en el ámbito local y global
+        con el mismo nombre.
+       */
