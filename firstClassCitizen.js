@@ -151,4 +151,74 @@
           console.log("Hola" + person)
         })("Miguel");
 
-        
+    //Recursión
+      // Una función es capaz de invocarse asi misma durante su ejecución.
+      function factorial(n){
+        if(n <= 1){
+          return 1
+        } else {
+          return n * factorial(n-1)
+        }
+      }
+      
+
+      //Callbaks
+      //Es una técnica de programación y no una facilidad del lenguaje.  
+
+
+      // Sin Callbacks:
+      function primerPaso() {
+       console.log("Este es el primer paso");
+      };
+      
+      function segundoPaso() {
+        console.log("Este es el segundo paso");
+      };
+      
+      primerPaso();
+      segundoPaso();
+
+
+      //Con callbacks
+
+      function primerPaso(callback) {
+        console.log("Este es el primer paso");
+        callback();
+      };
+      
+      function segundoPaso() {
+        console.log("Este es el segundo paso");
+      };
+      
+      primerPaso(segundoPaso);  
+
+      /*
+      2 Declaramos una función que espera dos parámetros
+      3 - parametro
+      4 - callback
+      5 */
+      var quieroCallback = function(p1, callback){
+      // Consideramos el callback como algo opcional.
+        if ((callback){
+      // Validamos si es una función o no.
+        if (typeof callback === 'function')){
+      /*
+      De ser una función lo ejecutamos y
+      y pasamos como argumento "p1"
+      */
+        callback(p1);
+      } else {
+      /*
+      Si no se trata de una función...
+      simplemente mostramos ambos datos.
+      */
+      console.log(p1, callback);
+      }
+      }
+      }
+      
+      quieroCallback('a', 'b');
+      
+      quieroCallback('a', function(val){
+      console.log(val);
+      });
