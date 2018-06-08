@@ -120,3 +120,35 @@
         es crear o declarar variables en el ámbito local y global
         con el mismo nombre.
        */
+
+       //Funciones anónimas
+        // Entre los requisitos de una funcion no esta incluir los nombres necesariamente.
+
+       //Funciones que retornan funciones
+        // Cuando una función retorna una función, esta sera logicamente anonima.
+
+        function greet(person){
+          return function(){
+            console.log("Hola" + person)
+          }
+        } 
+
+        var saluda = greet("Miguel");
+        saluda();
+
+        //Pordemos invocar una funcion sin asignar una variable necesariamente.
+
+        greet("Miguel")();
+
+        //Funciones anónimas autoejectuadas
+
+        (function(){
+          console.log("Hola pepito");
+        })();
+
+        //Con parametros
+        (function(person){
+          console.log("Hola" + person)
+        })("Miguel");
+
+        
